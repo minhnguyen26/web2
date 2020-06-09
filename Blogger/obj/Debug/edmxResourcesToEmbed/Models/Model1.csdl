@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlogTravelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="asia">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="order" Type="Int32" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+    <Property Name="IDmenu" Type="Int32" />
+    <NavigationProperty Name="menu" Relationship="BlogTravelModel.FK_asia_menu" FromRole="asia" ToRole="menu" />
+  </EntityType>
+  <EntityType Name="menu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="order" Type="Int32" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="asias" Relationship="BlogTravelModel.FK_asia_menu" FromRole="menu" ToRole="asia" />
+  </EntityType>
+  <EntityContainer Name="BlogTravelEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="asias" EntityType="Self.asia" />
+    <EntitySet Name="menus" EntityType="Self.menu" />
+    <AssociationSet Name="FK_asia_menu" Association="BlogTravelModel.FK_asia_menu">
+      <End Role="menu" EntitySet="menus" />
+      <End Role="asia" EntitySet="asias" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_asia_menu">
+    <End Type="BlogTravelModel.menu" Role="menu" Multiplicity="0..1" />
+    <End Type="BlogTravelModel.asia" Role="asia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="menu">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="asia">
+        <PropertyRef Name="IDmenu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

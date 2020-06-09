@@ -1,0 +1,12 @@
+C:\Users\Kim Thoa\Documents\Zalo Received Files\Blogger - Đồ Án Web\Blogger - Đồ Án Web\Models\bin\Debug\Models.dll.config
+C:\Users\Kim Thoa\Documents\Zalo Received Files\Blogger - Đồ Án Web\Blogger - Đồ Án Web\Models\bin\Debug\Models.dll
+C:\Users\Kim Thoa\Documents\Zalo Received Files\Blogger - Đồ Án Web\Blogger - Đồ Án Web\Models\bin\Debug\Models.pdb
+C:\Users\Kim Thoa\Documents\Zalo Received Files\Blogger - Đồ Án Web\Blogger - Đồ Án Web\Models\bin\Debug\EntityFramework.dll
+C:\Users\Kim Thoa\Documents\Zalo Received Files\Blogger - Đồ Án Web\Blogger - Đồ Án Web\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kim Thoa\Documents\Zalo Received Files\Blogger - Đồ Án Web\Blogger - Đồ Án Web\Models\bin\Debug\EntityFramework.xml
+C:\Users\Kim Thoa\Documents\Zalo Received Files\Blogger - Đồ Án Web\Blogger - Đồ Án Web\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kim Thoa\Documents\Zalo Received Files\Blogger - Đồ Án Web\Blogger - Đồ Án Web\Models\obj\Debug\Models.csprojAssemblyReference.cache
+C:\Users\Kim Thoa\Documents\Zalo Received Files\Blogger - Đồ Án Web\Blogger - Đồ Án Web\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Kim Thoa\Documents\Zalo Received Files\Blogger - Đồ Án Web\Blogger - Đồ Án Web\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\Kim Thoa\Documents\Zalo Received Files\Blogger - Đồ Án Web\Blogger - Đồ Án Web\Models\obj\Debug\Models.dll
+C:\Users\Kim Thoa\Documents\Zalo Received Files\Blogger - Đồ Án Web\Blogger - Đồ Án Web\Models\obj\Debug\Models.pdb
