@@ -33,6 +33,25 @@ namespace Blogger.Controllers
                     select t;
             return PartialView(v.ToList());
         }
+        public ActionResult geteu()
+        {
+
+            ViewBag.meta = "dia-diemeu";
+            var v = from t in _db.EURs
+                    where t.hide == true
+                    orderby t.order ascending
+                    select t;
+            return PartialView(v.ToList());
+        }
+        public ActionResult getcountryEU(long id)
+        {
+            ViewBag.meta = "dia-diemeu";
+            var v = from t in _db.CountryEurus
+                    where t.hide == true && t.EuId == id
+                    orderby t.order ascending
+                    select t;
+            return PartialView(v.ToList());
+        }
 
     }
 }

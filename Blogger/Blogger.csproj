@@ -137,6 +137,7 @@
     <Compile Include="Areas\admin\Controllers\menusController.cs" />
     <Compile Include="Areas\admin\Models\LoginModel.cs" />
     <Compile Include="Controllers\countryController.cs" />
+    <Compile Include="Controllers\countryEUController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TempController.cs" />
@@ -2960,6 +2961,10 @@
     <Content Include="Content\img\comment\comment_1.png" />
     <Content Include="Content\img\comment\comment_2.png" />
     <Content Include="Content\img\comment\comment_3.png" />
+    <Content Include="Content\img\countryeu\berlin.jpg" />
+    <Content Include="Content\img\countryeu\london.jpg" />
+    <Content Include="Content\img\countryeu\mu.jpg" />
+    <Content Include="Content\img\countryeu\paris.jpg" />
     <Content Include="Content\img\country\hagiang.jpg" />
     <Content Include="Content\img\country\hagiang1.jpg" />
     <Content Include="Content\img\country\hanoi.jpg" />
@@ -3431,6 +3436,10 @@
     <Content Include="Views\Default\getcountry.cshtml" />
     <Content Include="Views\country\Index.cshtml" />
     <Content Include="Views\country\Detail.cshtml" />
+    <Content Include="Views\Default\geteu.cshtml" />
+    <Content Include="Views\Default\getcountryEU.cshtml" />
+    <Content Include="Views\countryEU\Detail.cshtml" />
+    <Content Include="Views\countryEU\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

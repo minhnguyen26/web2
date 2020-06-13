@@ -17,19 +17,35 @@ namespace Blogger
                new { controller = "Country", action = "Index", meta = UrlParameter.Optional },
                new RouteValueDictionary
                {
-                { "type","dia-diem"}
-                },
+                    { "type","dia-diem"}
+               },
                namespaces: new[] { "Blogger.Controllers" });
-
+            //asia
                 routes.MapRoute("Detail", "{type}/{meta}/{id}",
                 new { controller = "Country", action = "Detail", id = UrlParameter.Optional },
                 new RouteValueDictionary
                 {
-                { "type","dia-diem"}
+                    { "type","dia-diem"}
+                },
+                namespaces: new[] { "Blogger.Controllers" });
+            //countryEU
+                 routes.MapRoute("countryEU", "{type}/{meta}",
+                 new { controller = "countryEU", action = "Index", meta = UrlParameter.Optional },
+                 new RouteValueDictionary
+                {
+                    { "type","dia-diemeu"}
+                },
+                namespaces: new[] { "Blogger.Controllers" });
+            //EUR
+                routes.MapRoute("DetailEU", "{type}/{meta}/{id}",
+                new { controller = "CountryEU", action = "Detail", id = UrlParameter.Optional },
+                new RouteValueDictionary
+                {
+                    { "type","dia-diemeu"}
                 },
                 namespaces: new[] { "Blogger.Controllers" });
 
-            routes.MapRoute(
+                routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Default", action = "Index", id = UrlParameter.Optional },
