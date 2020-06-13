@@ -9,15 +9,26 @@ namespace Blogger.Controllers
     public class DefaultController : Controller
     {
         // GET: Default
-        BlogTravelEntities5 _db = new BlogTravelEntities5();
+        BlogTravelEntities1 _db = new BlogTravelEntities1();
         public ActionResult Index()
         {
             return View();
         }
         public ActionResult getasia()
         {
+            
+            ViewBag.meta = "dia-diem";
             var v = from t in _db.asias
                     where t.hide == true
+                    orderby t.order ascending
+                    select t;
+            return PartialView(v.ToList());
+        }
+        public ActionResult getcountry(long id)
+        {
+            ViewBag.meta = "dia-diem";
+            var v = from t in _db.Countries
+                    where t.hide == true && t.asiaId == id
                     orderby t.order ascending
                     select t;
             return PartialView(v.ToList());

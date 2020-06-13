@@ -9,7 +9,7 @@ namespace Blogger.Controllers
 {
     public class TempController : Controller
     {
-        BlogTravelEntities5 _db = new BlogTravelEntities5();
+        BlogTravelEntities1 _db = new BlogTravelEntities1();
         // GET: Temp
         public ActionResult Index()
         {

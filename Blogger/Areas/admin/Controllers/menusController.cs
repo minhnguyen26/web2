@@ -12,7 +12,7 @@ namespace Blogger.Areas.admin.Controllers
 {
     public class menusController : Controller
     {
-        private BlogTravelEntities5 db = new BlogTravelEntities5();
+        private BlogTravelEntities1 db = new BlogTravelEntities1();
 
         // GET: admin/menus
         public ActionResult Index()

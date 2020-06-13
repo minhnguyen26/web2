@@ -14,6 +14,12 @@ namespace Blogger.Models
     
     public partial class asia
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public asia()
+        {
+            this.Countries = new HashSet<Country>();
+        }
+    
         public int id { get; set; }
         public string name { get; set; }
         public string link { get; set; }
@@ -23,6 +29,7 @@ namespace Blogger.Models
         public Nullable<System.DateTime> datebegin { get; set; }
         public Nullable<int> IDmenu { get; set; }
     
-        public virtual menu menu { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Country> Countries { get; set; }
     }
 }

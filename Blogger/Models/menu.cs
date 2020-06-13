@@ -14,12 +14,6 @@ namespace Blogger.Models
     
     public partial class menu
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public menu()
-        {
-            this.asias = new HashSet<asia>();
-        }
-    
         public int id { get; set; }
         public string name { get; set; }
         public string link { get; set; }
@@ -27,8 +21,5 @@ namespace Blogger.Models
         public Nullable<bool> hide { get; set; }
         public Nullable<int> order { get; set; }
         public Nullable<System.DateTime> datebegin { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<asia> asias { get; set; }
     }
 }
