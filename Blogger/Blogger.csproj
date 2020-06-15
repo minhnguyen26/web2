@@ -132,6 +132,7 @@
     <Compile Include="Areas\admin\code\SessionHelper.cs" />
     <Compile Include="Areas\admin\code\UserSession.cs" />
     <Compile Include="Areas\admin\Controllers\CountriesController.cs" />
+    <Compile Include="Areas\admin\Controllers\CountryEurusController.cs" />
     <Compile Include="Areas\admin\Controllers\DefaultController.cs" />
     <Compile Include="Areas\admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\admin\Controllers\menusController.cs" />
@@ -3402,6 +3403,12 @@
     <Content Include="Areas\admin\Content\ckfinder\plugins\fileeditor\codemirror\LICENSE" />
     <Content Include="Areas\admin\Content\ckfinder\userfiles\.htaccess" />
     <Content Include="Areas\admin\Views\Countries\getcountry.cshtml" />
+    <Content Include="Areas\admin\Views\CountryEurus\Create.cshtml" />
+    <Content Include="Areas\admin\Views\CountryEurus\Delete.cshtml" />
+    <Content Include="Areas\admin\Views\CountryEurus\Details.cshtml" />
+    <Content Include="Areas\admin\Views\CountryEurus\Edit.cshtml" />
+    <Content Include="Areas\admin\Views\CountryEurus\Index.cshtml" />
+    <Content Include="Areas\admin\Views\CountryEurus\getcountryEU.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

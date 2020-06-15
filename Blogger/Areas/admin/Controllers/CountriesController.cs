@@ -89,7 +89,7 @@ namespace Blogger.Areas.admin.Controllers
                     country.order = getMaxOrder(country.asiaId);
                     db.Countries.Add(country);
                     db.SaveChanges();
-                    return RedirectToAction("Index", "products", new { id = country.asiaId });
+                    return RedirectToAction("Index", "country", new { id = country.asiaId });
                 }
             }
             catch (DbEntityValidationException e)
